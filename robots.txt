@@ -1,0 +1,1 @@
+Sitemap: https://github.com/juliasilge/plotly-quarto-ghpages/sitemap.xml
