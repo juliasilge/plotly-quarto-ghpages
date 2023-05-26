@@ -10,5 +10,6 @@ Depends:
     R (>= 3.1.0)
 Imports:
     htmltools,
+    reticulate,
     rmarkdown
 Encoding: UTF-8
