@@ -1,0 +1,35 @@
+---
+title: "plotly-quarto-ghpages"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+Let's make a Plotly figure:
+
+```{python}
+import plotly.express as px
+import plotly.io as pio
+gapminder = px.data.gapminder()
+gapminder2007 = gapminder.query("year == 2007")
+fig = px.scatter(gapminder2007, 
+                 x="gdpPercap", y="lifeExp", color="continent", 
+                 size="pop", size_max=60,
+                 hover_name="country")
+fig.show()
+```
+
+Did it show up? ⤴️
+
+If not, we can directly write out the HTML:
+
+```{python}
+pio.write_html(fig, file="plot.html", auto_open=False)
+```
+
+Now we can include it here:
+
+```{r}
+htmltools::includeHTML("plot.html")
+```
