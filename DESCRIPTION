@@ -9,5 +9,6 @@ License: MIT
 Depends:
     R (>= 3.1.0)
 Imports:
-    htmltools
+    htmltools,
+    rmarkdown
 Encoding: UTF-8
