@@ -33,3 +33,10 @@ Now we can include it here:
 ```{r}
 htmltools::includeHTML("plot.html")
 ```
+
+What R packages got used here?
+
+```{r}
+sessioninfo::session_info()
+```
+
