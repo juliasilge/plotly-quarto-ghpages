@@ -36,6 +36,7 @@ jobs:
       - name: Manually install knitr
         run: |
           devtools::install_version("knitr", "1.41")
+          sessioninfo::session_info()
         shell: Rscript {0}
 
       - name: Render and publish to GitHub Pages
