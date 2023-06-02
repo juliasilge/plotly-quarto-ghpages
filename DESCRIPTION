@@ -1,16 +1,15 @@
 Package: plotly-quarto-ghpages
 Title: GH Pages Example for Plotly
 Version: 0.1
-Authors@R: c(
+Authors@R: 
     person("Julia", "Silge", , "julia.silge@rstudio.com", role = c("cre", "aut"),
            comment = c(ORCID = "0000-0002-3671-836X"))
-  )
 License: MIT
 Depends:
     R (>= 3.1.0)
 Imports:
     htmltools,
+    knitr (<= 1.41),
     reticulate,
-    rmarkdown,
-    knitr (== 1.41)
+    rmarkdown
 Encoding: UTF-8
