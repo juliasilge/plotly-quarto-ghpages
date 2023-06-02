@@ -11,5 +11,6 @@ Depends:
 Imports:
     htmltools,
     reticulate,
-    rmarkdown
+    rmarkdown,
+    knitr (== 1.41)
 Encoding: UTF-8
