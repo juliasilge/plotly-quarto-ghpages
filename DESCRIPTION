@@ -8,8 +8,8 @@ License: MIT
 Depends:
     R (>= 3.1.0)
 Imports:
+    devtools,
     htmltools,
-    knitr (<= 1.41),
     reticulate,
     rmarkdown
 Encoding: UTF-8
